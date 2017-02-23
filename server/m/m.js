@@ -31,7 +31,7 @@ class M {
         return (req, res) => {
             let request = new Request(req);
             let response = new Response(res);
-            composeMiddleWares(request, response);
+            composeMiddleWares(req, res);
         };
     }
 
